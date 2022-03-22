@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" />
+		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+	</head>
+	<body class="mdui-theme-primary-purple mdui-appbar-with-toolbar mdui-drawer-body-left">
+		<div id="app">
+			<header class="mdui-appbar mdui-appbar-fixed">
+				<div class="mdui-toolbar mdui-color-theme">
+					<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}">
+						<i class="mdui-icon material-icons">menu</i>
+					</a>
+					<a href="javascript:;" class="mdui-typo-headline">MDUI</a>
+					<a href="javascript:;" class="mdui-typo-title">文档</a>
+					<div class="mdui-toolbar-spacer"></div>
+					<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{ content:'设计主题'}"
+						mdui-dialog="{target:'#mdui-dialog'}">
+						<i class="mdui-icon material-icons">color_lens</i>
+					</a>
+					<a href="https://github.com/zdhxiong/mdui" target="_blank" class="mdui-btn mdui-btn-icon"
+						mdui-tooltip="{content:'前往GITHUB'}">
+						<i class="mdui-icon fa fa-github"></i>
+					</a>
+				</div>
+			</header>
+			<aside class="mdui-drawer" id="left-drawer">
+				<ul class="mdui-list" mdui-collapse="{accordion: true}">
+					<li class="mdui-collapse-item mdui-collapse-item-open">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">near_me</i>
+							<div class="mdui-list-item-content">开始使用</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list ">
+							<li class="mdui-list-item mdui-ripple mdui-list-item-active">简介</li>
+							<li class="mdui-list-item mdui-ripple">下载</li>
+							<li class="mdui-list-item mdui-ripple">兼容性</li>
+							<li class="mdui-list-item mdui-ripple">JavaScript 工具库</li>
+							<li class="mdui-list-item mdui-ripple">JavaScript 全局方法</li>
+							<li class="mdui-list-item mdui-ripple">从 0.4.3 升级到 1.0.0</li>
+						</ul>
+					</li>
+					<li class="mdui-collapse-item ">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange">layers</i>
+							<div class="mdui-list-item-content">样式</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list ">
+							<li class="mdui-list-item mdui-ripple">颜色与主题</li>
+							<li class="mdui-list-item mdui-ripple">字体</li>
+							<li class="mdui-list-item mdui-ripple">网格布局</li>
+							<li class="mdui-list-item mdui-ripple">排版</li>
+							<li class="mdui-list-item mdui-ripple">图标</li>
+							<li class="mdui-list-item mdui-ripple">媒体</li>
+							<li class="mdui-list-item mdui-ripple">辅助类</li>
+							<li class="mdui-list-item mdui-ripple">阴影</li>
+						</ul>
+					</li>
+					<li class="mdui-collapse-item ">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">widgets</i>
+							<div class="mdui-list-item-content">组件</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list ">
+							<li class="mdui-list-item mdui-ripple">涟漪动画效果</li>
+							<li class="mdui-list-item mdui-ripple">按钮</li>
+							<li class="mdui-list-item mdui-ripple">浮动操作按钮</li>
+							<li class="mdui-list-item mdui-ripple">下拉选择</li>
+							<li class="mdui-list-item mdui-ripple">分隔线</li>
+							<li class="mdui-list-item mdui-ripple">可拓展面板</li>
+							<li class="mdui-list-item mdui-ripple">文本框</li>
+							<li class="mdui-list-item mdui-ripple">选择控件</li>
+							<li class="mdui-list-item mdui-ripple">滑块</li>
+							<li class="mdui-list-item mdui-ripple">列表</li>
+							<li class="mdui-list-item mdui-ripple">列表控制</li>
+							<li class="mdui-list-item mdui-ripple">网格列表</li>
+							<li class="mdui-list-item mdui-ripple">Tab选显卡</li>
+							<li class="mdui-list-item mdui-ripple">工具栏</li>
+							<li class="mdui-list-item mdui-ripple">应用栏</li>
+							<li class="mdui-list-item mdui-ripple">抽屉式导航</li>
+							<li class="mdui-list-item mdui-ripple">顶部式导航</li>
+							<li class="mdui-list-item mdui-ripple">卡片</li>
+							<li class="mdui-list-item mdui-ripple">纸片</li>
+							<li class="mdui-list-item mdui-ripple">工具提示</li>
+							<li class="mdui-list-item mdui-ripple">Snackbar</li>
+							<li class="mdui-list-item mdui-ripple">表格</li>
+							<li class="mdui-list-item mdui-ripple">对话框</li>
+							<li class="mdui-list-item mdui-ripple">菜单</li>
+							<li class="mdui-list-item mdui-ripple">进度提示器</li>
+						</ul>
+					</li>
+					<li class="mdui-collapse-item ">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i
+								class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-brown">view_carousel</i>
+							<div class="mdui-list-item-content">JavaScript插件</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list ">
+							<li class="mdui-list-item mdui-ripple">Collapse</li>
+							<li class="mdui-list-item mdui-ripple">Headroom</li>
+						</ul>
+					</li>
+					<li class="mdui-collapse-item ">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">local_mall</i>
+							<div class="mdui-list-item-content">资源</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list ">
+							<li class="mdui-list-item mdui-ripple">Material图标</li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<main class="mdui-container container">
+				<div class="mdui-typo">
+					<h1 class="mdui-text-color-theme title">简介</h1>
+					<p>让我们通过 MDUI 的 CDN 和一个最简单的页面模板来开始使用 MDUI。</p>
+				</div>
+				<div class="mdui-typo">
+					<blockquote class="reference">
+						<span>Contents</span>
+						<dl>
+							<dt><a href="#" class="mdui-text-color-theme">快速入门</a></dt>
+							<dd><a href="#" class="mdui-text-color-theme">Css文件</a></dd>
+							<dd><a href="#" class="mdui-text-color-theme">Javascript文件</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#" class="mdui-text-color-theme">最简单的页面模板</a> </dt>
+						</dl>
+					</blockquote>
+				</div>
+				<div class="mdui-typo chapter">
+					<h2 class="mdui-text-color-theme">快速入门</h2>
+					<p>使用 MDUI 最简单的方式是直接从 CDN 引入 CSS 和 JS 文件。</p>
+					<p>
+						<span>如果你想使用包管理器或下载源文件，请</span>
+						<a href="#">前往下载页面</a>
+						<span>。</span>
+					</p>
+				</div>
+				<div class="mdui-typo css">
+					<h4>CSS文件</h4>
+					<p>
+						将以下 <code>&lt;link&gt; </code>标签添加到 <code>&lt;head&gt;</head> </code>标签中，并放置在所有其他样式文件之前。
+					</p>
+					<p class="css-remplate">
+						<code>
+							<span class="tag-style">&lt;link</span>
+							<span class="tag-attr-style">rel</span>
+							<span class="tag-style">=</span>
+							<span class="tag-attr-value-style">"stylesheet"</span>
+							href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/&gt;</code>
+					</p>
+				</div>
+				<div class="mdui-typo js">
+					<h4>JS文件</h4>
+					<p>
+						将以下 <code>&lt;script&gt; </code>标签添加到页面尾部，且在 <code>&lt;/body&gt;</head> </code>标签之前。
+					</p>
+					<p class="css-remplate">
+						<code>
+							<span class="tag-style">&lt;script</span>
+							<span class="tag-attr-style">src</span>
+							<span class="tag-style">=</span>
+							"https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"/&gt;
+							<span class="tag-style">&lt;/<span class="hljs-name">script</span>&gt;</span></code>
+					</p>
+					<p>MDUI 不依赖任何第三方库，引入了上述两个文件后，便能正常工作了。</p>
+				</div>
+				<div class="mdui-typo simple-template">
+					<h2 class="chapter-title mdui-text-color-theme">
+						最简单的页面模板
+						<a class="anchor" id="template"></a>
+					</h2>
+					<p class="css-remplate">
+					<pre><code><span class="doc-type">&lt;doctype</span> <span class="tag-style">html</span><span class="doc-type">&gt;</span>
+<span class="tag-style">&lt;html</span> <span class="tag-attr-style">lang</span><span class="tag-style">=</span><span class="tag-attr-value-style">"zh-cmn-Hans"</span><span class="tag-style">&gt;</span>
+ <span class="tag-style">&lt;head&gt;</span><span class="tag-style">&lt;meta</span> <span class="tag-attr-style">charset</span><span class="tag-style">=</span><span class="tag-attr-value-style">"utf-8"</span><span class="tag-style">&gt;</span>
+    <span class="tag-style">&lt;meta</span> <span class="tag-attr-style">name</span><span class="tag-style">=</span><span class="tag-attr-value-style">"viewport"</span> <span class="tag-attr-style">content</span><span class="tag-style">=</span><span class="tag-attr-value-style">"width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"</span><span class="tag-style">/&gt;</span>
+    <span class="tag-style">&lt;meta</span> <span class="tag-attr-style">name</span><span class="tag-style">=</span><span class="tag-attr-value-style">"renderer"</span> <span class="tag-attr-style">content</span><span class="tag-style">=</span><span class="tag-attr-value-style">"webkit"</span><span class="tag-style">/&gt;</span>
+    <span class="tag-style">&lt;meta</span> <span class="tag-attr-style">name</span><span class="tag-style">=</span><span class="tag-attr-value-style">"force-rendering"</span> <span class="tag-attr-style">content</span><span class="tag-style">=</span><span class="tag-attr-value-style">"webkit"</span><span class="tag-style">/&gt;</span>
+    <span class="tag-style">&lt;meta</span> <span class="tag-attr-style">http-equiv</span><span class="tag-style">=</span><span class="tag-attr-value-style">"X-UA-Compatible"</span> <span class="tag-attr-style">content</span><span class="tag-style">=</span><span class="tag-attr-value-style">"IE=edge,chrome=1"</span><span class="tag-style">/&gt;</span>
+						
+    <span class="comment-style">&lt;!-- MDUI CSS --&gt;</span>
+    <span class="tag-style">&lt;link</span> <span class="tag-attr-style">rel</span><span class="tag-style">=</span><span class="tag-attr-value-style">"stylesheet"</span> <span class="tag-attr-style">href</span><span class="tag-style">=</span><span class="tag-attr-value-style">"https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"</span><span class="tag-style">/&gt;</span>
+    <span class="tag-style">&lt;title&gt;</span>Hello, world!<span class="tag-style">&lt;/title&gt;
+ <span class="tag-style">&lt;/head&gt;</span></span>
+ <span class="tag-style">&lt;body&gt;</span>
+<span class="tag-style">&lt;h1&gt;</span>Hello, world!<span class="tag-style">&lt;/h1&gt;</span>
+						
+    <span class="comment-style">&lt;!-- MDUI JavaScript --&gt;</span>
+    <span class="tag-style">&lt;script</span> <span class="tag-attr-style">src</span><span class="tag-style">=</span><span class="tag-attr-value-style">"https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"</span><span class="tag-style">&gt;&lt;/script&gt;</span>
+ <span class="tag-style">&lt;/body&gt;</span>
+<span class="tag-style">&lt;/html&gt;</span>
+						        </code></pre>
+					</p>
+					<p>以上就是一个完整的页面所需要的全部内容。你可以自行在其中添加更多组件和内容，来构建一个网站。</p>
+				</div>
+				
+		
+		</main>
+		<footer class="mdui-color-theme footer-nav">
+			<div class="mdui-container">
+				<div class="mdui-row">
+					<div class="mdui-col-xs-2 mdui-col-sm-6"></div>
+					<div
+						class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 mdui-valign mdui-text-right footer-text">
+						<div>
+							<i class="mdui-icon material-icons mdui-float-right">arrow_forward</i>
+							<div class="next">Next</div>
+							<div class="download">下载</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- 对话框 -->
+		<div class="mdui-dialog" id="mdui-dialog">
+			<div class="mdui-dialog-title">设置文档主题</div>
+			<div class="mdui-dialog-content">
+				<div class="mdui-dialog-title">主题色</div>
+				<form style="padding: 0 100px;">
+					<label class="mdui-radio">
+						<input type="radio" name="group1" checked id="radio_light" />
+						<i class="mdui-radio-icon"></i>
+						Light
+					</label>
+					<label class="mdui-radio  mdui-float-right">
+						<input type="radio" name="group1" id="radio_night" />
+						<i class="mdui-radio-icon"></i>
+						Dark
+					</label>
+				</form>
+			</div>
+			<div class="mdui-divider"></div>
+			<div class="mdui-dialog-actions">
+				<button class="mdui-btn mdui-ripple mdui-float-left" mdui-dialog-close>重置主题</button>
+				<button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
+			</div>
+		</div>
+		</div>
+
+
+
+
+		<script>
+			document.getElementById("radio_light").onclick = function() {
+				document.body.classList.remove("mdui-theme-layout-dark");
+				document.body.classList.add("mdui-theme-primary-purple");
+			}
+			document.getElementById("radio_night").onclick = function() {
+				document.body.classList.remove("mdui-theme-primary-purple");
+				document.body.classList.add("mdui-theme-layout-dark");
+			}
+		</script>
+	</body>
+</html>
